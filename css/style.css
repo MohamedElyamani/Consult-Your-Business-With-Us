@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+    padding: 5% 0;
+}
+p{
+    margin: 0 ;
+    padding: 0;
+    color: var(--pColor);
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --mainColor: #7370D8;
+    --pColor: #939393;
+    --overlay: linear-gradient(rgba(155,155,218,0.7),rgba(155,155,218,0.7));
+}
+/*=============== start header ==========*/
+#header{
+    background:  var(--overlay), url(../images/banner/banner1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    background-color: var(--mainColor) !important;
+    z-index: 99999;
+}
+ul li a{
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 17px;
+}
+.navbar ul li a:hover{
+    color: #000 !important;
+}
+.headerTitle h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+.headerTitle p{
+    font-size: 20px;
+    color: #fff;;
+}
+.headerTitle button{
+    padding: 20px 40px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--mainColor);
+}
+.headerTitle button:hover{
+    background: #7370D8;
+    color: #fff;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.navbar-toggler i{
+    font-size: 25px;
+    color: #fff;
+}
+
+/*============== end header =========== */
+
+
+/*============== start about =========== */
+
+.aboutTitle p{
+    font-size: 18px;
+    padding: 20px;
+}
+.aboutItems .items{
+    box-shadow: 0 2px 6px 0 #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.aboutItems .items i{
+    font-size: 40px;
+    color: var(--mainColor);
+    padding: 30px 0;
+}
+.aboutItems .items p{
+    color: var(--pColor);
+    padding: 20px;
+    font-size: 22px;
+}
+
+#about{
+    background-color: #F9FAFF;
+}
+#about .left h2{
+     font-size: 50px;
+}
+#about .left p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+#about .left button{
+    padding: 15px 40px;
+    border: 1px solid var(--mainColor);
+    background-color: var(--mainColor);
+    transition: .5s;
+    color: #fff;
+}
+#about .left button:hover{
+    background: transparent;
+    color: var(--mainColor);
+}
+
+#about .right img{
+    margin-top: 5%;
+}
+/*================== end about ====================== */
+
+/*================== start services ====================== */
+.servicesTitle p{
+    font-size: 18px;
+    padding: 20px;
+}
+#services .serv{
+    padding: 20px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.serv:hover{
+    padding: 5px;
+    box-shadow: 5px 5px 0 2px #e0e0e0b0;
+    transform: translateY(-5px);
+    border-radius: 10px;
+}
+#services .serv i{
+    font-size: 40px;
+    color: var(--mainColor);
+    padding: 30px 0;
+}
+#services .serv h3{
+    padding: 10px 0;
+}
+#services .serv p{
+    padding: 15px;
+}
+#services .serv a{
+    color: var(--mainColor);
+}
+
+/*================== end services ====================== */
+
+
+/*================== start counter ====================== */
+#counter{
+    background: var(--overlay) , url(../images/counter/counter-banner.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+}
+#counter .cont h3{
+    font-size: 25px;
+}
+#counter .cont img{
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+/*================== end counter ====================== */
+
+
+/*================== start projects ====================== */
+#project{
+    background-color: #F9FAFF;
+}
+#project .projects{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.projects .layerContent p{
+    color: #fff;
+}
+#project .projects img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    
+}
+.projects .layer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(155,155,218,0.8);
+    transition: 0.5s;
+    overflow: hidden;
+    transform: scale(0);
+    
+}
+.projects .layer .layerContent a{
+    color: #fff;
+    font-size: 30px;
+}
+.projects:hover img{
+    transform: scale(1.1);
+}
+.projects:hover .layer{
+  transform: scale(1);
+}
+/*================== end projects ====================== */
+
+/*================== start team ====================== */
+#team{
+    background: var(--mainColor);
+}
+.personInfo h5,
+.personInfo p{
+    margin: 0;
+    color: #fff;
+}
+.personInfo p{
+    font-size: 14px;
+}
+.personInfo a{
+    color: var(--mainColor);
+    font-size: 12px;
+}
+.personInfo a:hover{
+    color: var(--mainColor);
+}
+.person{
+    position: relative;
+    overflow: hidden;
+}
+.personInfo{
+    background: #3C3A6E;
+    position: absolute;
+    width: 100%;
+    bottom: -30px;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+.person:hover .personInfo{
+    bottom: 0px;
+}
+/*================== end team ====================== */
+
+/*================== start price====================== */
+.num{
+    background: #ABA9E8;
+    position: relative;
+}
+.num i{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: gold;
+}
+.num h5{
+    font-size: 1.5rem;
+}
+.num h3{
+    font-size: 1.3rem;
+}
+.pricingBenfit li{
+    margin-bottom: 18px;
+    color: var(--pColor);
+    font-size: 15px;
+}
+.pricingBenfit{
+    background: #F9FAFF;
+}
+.pricingBenfit a{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 4em;
+    background: #ABA9E8;
+    color: #fff;
+    font-size: 12px;
+}
+.pricingItem:hover .num,
+.pricingItem:hover a{
+    background: var(--mainColor);
+    transition: 0.35s all ease-in-out;
+}
+.pricingBenfit a:hover{
+    background: transparent;
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
+}
+
+
+/*================== end price ====================== */
+
+/* ========================= start Client   ==================== */
+.owl-carousel .item{
+    margin-top: 4em;
+}
+.owl-carousel .item .clientIMG img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    border: 2px solid var(--mainColor);
+}
+.owl-carousel .item i{
+    color: #C3C3EF;
+}
+.owl-carousel .item p{
+    padding: 10px 6em;
+    font-size: 20px;
+}
+.owl-carousel .item h2{
+    color: var(--mainColor);
+}
+/*========================= end Client   ====================-*/
+
+
+/*========================= start Testi   ====================-*/
+.brand{
+    background: #000;
+}
+.brand .item{
+    margin-bottom: 4em ;
+}
+.brand .item img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+
+/*========================= end Testi   ====================-*/
+
+
+
+/*==================*/
+
+/*================== start  News ====================== */
+.newsTitle p{
+    margin: 15px 0;
+}
+.news{
+    box-shadow: 0px 0px 20px  rgba(0,0,0,0.2);
+}
+.news .newsIMG{
+    position: relative;
+    overflow: hidden;
+}
+.news .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(155,155,218,0.8);
+    transform: scale(0);
+    transition: 0.4s all ease-in-out;
+}
+.news:hover .layer{
+    transform: scale(1);
+}
+.news .newsContent a{
+    display: block;
+    margin-bottom: 15px;
+    color: #000;
+    font-style: italic;
+}
+.news .newsContent p{
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+.news .newsContent p span{
+    color: var(--mainColor);
+}
+
+
+#news .readMore button{
+    margin: auto;
+    padding: 0.5rem 2.5rem;
+    background: var(--mainColor);
+    color: #fff;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+#news .readMore button:hover{
+    border: 1px solid var(--mainColor);
+    background: transparent;
+    color: var(--mainColor);
+}
+/*================== end News ====================== */
+
+#contact{
+    background:  linear-gradient(rgba(147, 147, 228, 0.9),rgba(147, 147, 228, 0.9)), url(../images/footer/map.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#contact p{
+    color: #fff;
+}
+.contactTitle h1 {
+    color: #fff;
+}
+.contactInfo .adress{
+    line-height: 2.5;
+}
+.contactInfo .social i{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.message span{
+    color: rgb(167, 0, 0);
+    font-size: x-large;
+}
+.message .messageArea{
+    width: 100%;
+    height: 200px;
+    resize: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+.message .sendBtn button{
+    letter-spacing: 5px;
+    border: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+.message .sendBtn button:hover{
+    color: var(--mainColor);
+    background-color: #fff;
+}
+
+/*====================== start now===================*/
+.startNow{
+    background: var(--mainColor);
+}
+.startNow .startBtn button{
+    border: 1px solid #fff;
+    outline: none;
+}
+/*====================== end now =================== */
+
+
+/*====================== start footer =================== */
+
+footer{
+    padding: 10% 0;
+    background-color: #212135;
+}
+.footInfo i{
+    text-align: center;
+    color: #000;
+    background: var(--pColor);
+    width: 30px;
+    height: 30px;
+    line-height: 2.2;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.footInfo i:hover{
+    background: #fff;
+    transform: translateY(-5px);
+}
+.footInfo a{
+    color: var(--pColor) !important;
+}
+.footInfo li a{
+    font-size: 13px;
+    line-height: 2.5;
+}
+.footInfo li a:hover {
+    color: #fff !important;
+}
+.footInfo .fromNews a:hover{
+    color: var(--mainColor) !important;
+}
+.footInfo .fromNews p span{
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.footInfo .fromNews .line{
+    width: 90%;
+    height: 2px;
+    background: var(--pColor);
+}
+.footInfo .subscribe input{
+    border: none;
+    background: #3D3D4D;
+    border-radius: 0px !important;
+}
+.footInfo .subscribe button{
+    background: var(--mainColor);
+    color: #fff;
+    border: none;
+    border-radius: 0px !important;
+}
+.copyRight{
+    background: #1A1A2A;
+}
+.copyRight .links a{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.copyRight .author p{
+    font-size: 14px;
+}
+
+/*====================== end footer =================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .headerTitle h1{
+        font-size: 60px;
+    }
+    .headerTitle p{
+        text-align: center;
+    }
+    .headerTitle button{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 678px) and (max-width: 992px) {
+    .aboutItems .items{
+        height: 100%;
+    }
+    .headerTitle h1{
+        font-size: 40px;
+    }
+}
